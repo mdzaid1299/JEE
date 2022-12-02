@@ -1,0 +1,16 @@
+class parent {
+    void run() {
+        System.out.println("Runnning");
+    }
+
+    class Bike extends vehicles {
+        void run() {
+            System.out.println("child running");
+        }
+    }
+    private static void main (String [] args){
+        vehicles vehicles = new vehicles();
+        System.out.println(vehicles.run());
+    }
+}
+
